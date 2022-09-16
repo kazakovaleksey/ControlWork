@@ -3,12 +3,12 @@
 //  либо задать на старте выполнения алгоритма. 
 // При решении не рекомендуется пользоваться коллекциями, лучше обойтись исключительно массивами.
 
-Console.WriteLine("Желаете ввести строки самостоятельно? y/n:");
+Console.WriteLine("Ввести строки самостоятельно? yes/no:");
 
 string? yesNo = "";
 while (yesNo.ToLower() != "yes" && yesNo.ToLower() != "no")
 {
-    Console.Write("Желаете вводить строки вручную? (yes/no): ");
+    Console.Write("Вводить строки вручную? (yes/no): ");
     yesNo = Console.ReadLine();
 }
 
@@ -16,7 +16,7 @@ string[] arrayOfStrings = new string[] { };
 
 if (yesNo.ToLower() == "yes")
 {
-    int n = InputNumbers("Введите количество элементов массива: ");
+    int n = InputNumbers("Введите количество элементов: ");
     arrayOfStrings = new string[n];
     for (int i = 0; i < arrayOfStrings.Length; i++)
     {
